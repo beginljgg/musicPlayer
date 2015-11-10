@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rVy-Yd-Qf3">
+                        <rect key="frame" x="10" y="10" width="105" height="105"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.56131293829999995" green="0.80793081040000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rVy-Yd-Qf3" secondAttribute="height" multiplier="1:1" id="Ht6-kD-Bha"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoJ-lj-ngi">
+                        <rect key="frame" x="155" y="75" width="200" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="AOG-ER-lf2"/>
+                            <constraint firstAttribute="height" constant="40" id="a6y-VF-SQt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSH-Yv-UOe">
+                        <rect key="frame" x="155" y="10" width="200" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="8Cz-vc-sVX"/>
+                            <constraint firstAttribute="height" constant="40" id="lPe-XP-Tzw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="IoJ-lj-ngi" firstAttribute="leading" secondItem="rVy-Yd-Qf3" secondAttribute="trailing" constant="40" id="Af1-bJ-reH"/>
+                    <constraint firstItem="IoJ-lj-ngi" firstAttribute="bottom" secondItem="rVy-Yd-Qf3" secondAttribute="bottom" id="B4n-ko-IUR"/>
+                    <constraint firstAttribute="bottom" secondItem="rVy-Yd-Qf3" secondAttribute="bottom" constant="10" id="GEY-tD-Dqx"/>
+                    <constraint firstItem="QSH-Yv-UOe" firstAttribute="leading" secondItem="rVy-Yd-Qf3" secondAttribute="trailing" constant="40" id="LB3-fg-UHG"/>
+                    <constraint firstItem="rVy-Yd-Qf3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LGW-8f-aPb"/>
+                    <constraint firstItem="QSH-Yv-UOe" firstAttribute="top" secondItem="rVy-Yd-Qf3" secondAttribute="top" id="P6T-5f-2Rk"/>
+                    <constraint firstItem="rVy-Yd-Qf3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="t7H-QA-1LG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="ImgView" destination="rVy-Yd-Qf3" id="taT-La-GxT"/>
+                <outlet property="singleLabel" destination="IoJ-lj-ngi" id="dhB-3K-vqo"/>
+                <outlet property="songLabel" destination="QSH-Yv-UOe" id="PxA-Qy-IkH"/>
+            </connections>
+            <point key="canvasLocation" x="333" y="433"/>
+        </tableViewCell>
+    </objects>
+</document>
